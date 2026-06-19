@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Virtual Bubble Wrap - Speedrun!</title>
+    <title>Virtual Bubble Wrap - Poppy</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -14,8 +14,8 @@
             min-height: 100vh;
             margin: 0;
         }
-        h1 { color: #333; margin-bottom: 5px; }
-        
+        h1 {color: #333; margin-bottom:5px;}
+
         .stats-container {
             display: flex;
             gap: 40px;
@@ -23,3 +23,47 @@
             margin-bottom: 20px;
             font-weight: bold;
         }
+        #popCount{color:#007bff;}
+        #timer {color: #dc3545;}
+
+        .wrap-container {
+        display:grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        position: relative; 
+    }
+
+
+    .bubble {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #ffffff 0%, #aadaff 40%, #4da3ff 100%);
+        box-shadow: inset -2px -2px 6px rgba(0,0,0,0.15), 2px 4px 8px rgba(0,0,0,0.2);
+        cursor: pointer;
+        transition: all 0.1s ease;
+    }
+    .bubble:active { transform: scale(0.9);}
+
+
+    .bubble.popped {
+        background: #e2e8f0;
+        box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+        cursor: default;
+        transform: scale(0.95);
+        pointer-events: none;
+    }
+
+
+    #victoryMessage {
+        display: none;
+        margin-top: 15px;
+        font-size: 1.5rem;
+        color: #28a745;
+        font-weight: bold;
+        animation: ;
+    }
