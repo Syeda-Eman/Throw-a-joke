@@ -1,4 +1,4 @@
-# 🫧 Virtual Bubble Wrap Speedrun
+# Virtual Bubble Wrap Speedrun - Poppy
 
 An addictive, satisfying mini-game built to practice advanced frontend skills. This project features a responsive grid layout, high-precision time tracking, and browser-synthesized audio effects.
 
