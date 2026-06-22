@@ -1,6 +1,6 @@
 # Throw a joke!
 
-A vibrant, arcade-style single-page web application that throws random jokes at the click of a button. This project was built as part of an HTML/CSS/JS crash course to master DOM text manipulation and randomized arrays without relying on visual asset bloat (like emojis or images).
+A vibrant, arcade-style single-page web application that throws random jokes at the click of a button.
 
 ---
 
